@@ -1,4 +1,4 @@
-{ stdenv, imagemagick, envsubst, python3Full, zip, ... }:
+{ stdenv, imagemagick, envsubst, python3Full, zip, nopng ? false, ... }:
 stdenv.mkDerivation {
   pname = "BetaNuBranding";
   version = "1.0.0";
@@ -9,6 +9,7 @@ stdenv.mkDerivation {
 
   buildPhase = ''
     python build.py
+    ${if nopng then "" else "mogrify -format png -density 2500 -background none out/*.svg" }
   '';
 
   installPhase = ''

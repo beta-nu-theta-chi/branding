@@ -16,11 +16,11 @@ A nix flake is also provided with the `#branding` attribute, this is useful for 
 
 ## Branding elements
 
-The `src/colors` folder contains color variants for different color schemes for models. All files referenced from the `build.py` builder will be built as a variant of the branding.
+The `src/colors` folder contains color variants for different color schemes for models. All files referenced from the `src/build.py` builder will be built as a variant of the branding.
 
 ## Build process
 
-The build process is managed by the `build.py` script
+The build process is managed by the `src/build.py` script
 
 1. It iterates over specified color schemes
 2. It iterates over logo variants, including the logomark, logo, OX logo, and stacked logomark variants
@@ -29,3 +29,4 @@ The build process is managed by the `build.py` script
 5. Releases:
     - For the GitHub release, a zip file will be made containing all the variants
     - For the nix flake, all raw files are provided in the `result` folder
+    - An additional attribute `.#branding-nopng` is provided for quicker builds

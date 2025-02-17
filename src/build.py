@@ -1,6 +1,3 @@
-from typing import Any
-
-
 import subprocess
 
 colors = [ "black", "color", "red", "white" ]
@@ -57,9 +54,5 @@ for color in colors:
                 source ./post.sh
                 {build(f"{des}{image[0]}-{color}.svg")}
             '''
-
-script += '''
-    mogrify -format png -density 2500 -background none out/*.svg
-'''
 
 _ = subprocess.run(["bash", "-c", script], check=True)
