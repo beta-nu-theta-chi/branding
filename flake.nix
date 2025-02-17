@@ -45,6 +45,7 @@
         };
         packages = rec {
           branding = pkgs.callPackage ./build.nix { };
+          deploy = pkgs.callPackage ./deploy.nix { src = branding; };
           default = branding;
         };
       }
