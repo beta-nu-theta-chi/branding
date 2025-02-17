@@ -1,0 +1,16 @@
+export CWRU="<path id=\"cwru\" style=\"$STYLEGOLD\" ${CLIPPATH} d=\"${CWRU}\" />"
+export BN="<path id=\"bn\" style=\"${STYLERED}\" ${CLIPPATH} d=\"${BN}\" />"
+export TAG="<path id=\"tag\" style=\"${STYLEGOLD}\" ${CLIPPATH} d=\"${TAG}${TOP}${CENTER}${BOTTOM}\" />"
+export OX="<path id=\"OX\" style=\"${STYLERED}\" ${CLIPPATH} d=\"${OX}\" />"
+export RED="<path id=\"red\" style=\"${STYLERED}\" ${CLIPPATH} d=\"${RED}\" />"
+export GOLD="<path id=\"gold\" style=\"${STYLEGOLD}\" ${CLIPPATH} d=\"${GOLD}\" />"
+export FRATERNITY="<path id=\"fraternity\" style=\"${STYLERED}\" ${CLIPPATH} d=\"${FRATERNITY}\" />"
+export TC="<path id=\"tc\" style=\"${STYLERED}\" ${CLIPPATH} d=\"${TC}\" />"
+
+export LOGO="<g id=\"logo\"> ${RED} ${GOLD} </g>"
+export MARK="<g id=\"mark\"> ${FRATERNITY} ${TC} </g>"
+export TAG="<g id=\"mark\"> ${TAG} ${TOP} ${CENTER} ${BOTTOM} </g>"
+
+export VB="0 0 ${WIDTH} ${HEIGHT}"
+export WIDTH="${WIDTH}mm"
+export HEIGHT="${HEIGHT}mm"
