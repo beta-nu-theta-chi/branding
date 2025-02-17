@@ -37,6 +37,7 @@ for color in colors:
     script += f'''
         source ./colors/{color}.sh
         source ./style.sh
+        envsubst -i ./_brand.yml -o out/_brand-{color}.yml
     '''
 
     for logo in logos:

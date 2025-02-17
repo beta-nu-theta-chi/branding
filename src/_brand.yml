@@ -1,0 +1,14 @@
+color:
+  palette:
+    military-red: "${RED}"
+    resolute-gold: "${GOLD}"
+    process-black: "${BLACK}"
+    white: "${WHITE}"
+  background: white
+  foreground: process-black
+  primary: military-red
+  secondary: resolute-gold
+logo:
+  small: branding/logo-${COLOR}.svg
+  medium: branding/logomark-uni-${COLOR}.svg
+  large: branding/stacked-uni-${COLOR}.svg

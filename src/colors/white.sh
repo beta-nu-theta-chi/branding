@@ -1,2 +1,5 @@
 export RED="#FFFFFF"
 export GOLD="#FFFFFF"
+export BLACK="#000000"
+export WHITE="#000000"
+export COLOR="white"
