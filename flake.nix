@@ -46,6 +46,8 @@
         packages = rec {
           branding = pkgs.callPackage ./build.nix { };
           branding-nopng = pkgs.callPackage ./build.nix { nopng = true; };
+          branding-white = pkgs.callPackage ./build.nix { bg = "white"; };
+          branding-black = pkgs.callPackage ./build.nix { bg = "black"; };
           deploy = pkgs.callPackage ./deploy.nix { src = branding; };
           default = branding;
         };
