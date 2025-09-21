@@ -1,6 +1,6 @@
 import subprocess
 
-colors = [ "black", "color", "red", "white" ]
+colors = [ "black", "color", "color_dark", "red", "white" ]
 
 logos: list[tuple[str, list[tuple[str, list[str]]]] | tuple[str, list[tuple[str, list[str]] | tuple[str, list[str]]]]] = [("OX", [
     ("-uni", [ "FRATERNITY" ]),
